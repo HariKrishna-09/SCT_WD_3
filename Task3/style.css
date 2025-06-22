@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Title */
+h1 {
+    color: #1976d2;
+    margin-bottom: 10px;
+}
+
+/* Game Container */
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Tic-Tac-Toe Board */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+/* Cells */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #4E4E50;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+/* Hover effect */
+.cell:hover {
+    background-color: green;
+}
+
+/* Game Status */
+#status {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: yellow;
+}
+
+/* Restart Button */
+#reset {
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#reset:hover {
+    background-color: #950740;
+}
